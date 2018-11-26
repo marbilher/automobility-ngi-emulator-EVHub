@@ -30,3 +30,22 @@
     transform: rotate(360deg);
   }
 }
+
+.text-white {
+  color: white;
+}
+
+.top-padding {
+  margin-top: 30px;
+}
+
+
+:link {
+  font-family: Arial;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display:inline;
+  padding-right:20px;
+}
