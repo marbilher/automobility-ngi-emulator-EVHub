@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <div>VIN: {this.state.vin}</div>
+        <div>Potatoes: {this.state.vin}</div>
         <button onClick={this.handleClose}>Close</button>
       </div>
     );
