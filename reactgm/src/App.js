@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
+  HashRouter,
   Route,
   Link
 } from 'react-router-dom'
@@ -12,7 +13,7 @@ import './App.css'
 
 
 const BasicExample = () => (
-  <Router onUpdate={() => window.scrollTo(0, 0)} >
+  <HashRouter onUpdate={() => window.scrollTo(0, 0)} >
     <div>
 
     <div className='text-white top-padding'>
@@ -28,6 +29,6 @@ const BasicExample = () => (
 
 
     </div>
-  </Router>
+  </HashRouter>
 )
 export default BasicExample

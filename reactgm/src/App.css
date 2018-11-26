@@ -49,3 +49,6 @@
   display:inline;
   padding-right:20px;
 }
+
+.leaflet-container { height: 400px; width: 100%; }
+
