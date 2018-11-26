@@ -29,7 +29,7 @@ class DemoPage extends React.Component {
       
     return (
       <div className={styles.root}>
-        <div>Tiptop: {this.state.vin}</div>
+        {/* <div>Tiptop: {this.state.vin}</div> */}
         <button onClick={this.handleClose}>Close</button>
       </div>
     );
