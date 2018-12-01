@@ -50,6 +50,7 @@
 
 import React, { Component } from "react";
 import L from "leaflet";
+
  const gm = window.gm;
  class MapPage extends Component {
   state = {
@@ -79,6 +80,8 @@ import L from "leaflet";
       });
     }
   };
+
+
    getFuelLevel = data => {
     this.setVariableRange(data);
   };
@@ -151,6 +154,27 @@ import L from "leaflet";
     );
   };
    setMapPosition = (incomingLat, incomingLng) => {
+
+
+//    function setOverlay() {
+   
+//     if(this.state.C) {
+
+//      let p1 = L.point(10, 10)
+//      let p2 = L.point(40, 60)
+//      var bounds = [p1, p2];
+
+//    var overlay = new L.ImageOverlay("https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg", bounds, {
+//      interactive: true,
+//      attribution: '&copy; A.B.B Corp.'
+//    });
+   
+//      this.state.mymap.addLayer(overlay);
+
+//    }
+//  }
+
+
     this.setState({
       mymap: L.map("mapid").setView([incomingLat, incomingLng], 12)
     });
@@ -165,7 +189,11 @@ import L from "leaflet";
         id: "mapbox.streets"
       }
     ).addTo(this.state.mymap);
+    // setOverlay();
   };
+
+
+  
    render() {
     return (
       
@@ -222,10 +250,16 @@ import L from "leaflet";
             Smart Reroute
           </button>
         </div>
-        <div id="mapid" style={{ height: "520px", width: "1255px" }} />
+
+        <div id="mapid" style={{ height: "520px", width: "1255px" }} >
+
+        </div>
       </React.Fragment>
     );
   }
 }
 
 export default MapPage;
+
+
+
